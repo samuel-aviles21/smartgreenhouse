@@ -108,16 +108,16 @@
 }
 
 */
-.general-text {
-    font-family: "Poppins", sans-serif;
-    color: black;
+body.general-text * {
+  font-family: "Poppins", sans-serif;
+  color: black;
 }
 
 .title-bold {
-    font-weight: bold;
-    font-style: normal;
+  font-weight: bold;
+  font-style: normal;
 }
 
 .nav-text {
-    font-weight: 600;
+  font-weight: 600;
 }
