@@ -13,148 +13,152 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
+
 </head>
 
 <body class="general-text">
-    <header class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-md-1">
+
+    <!-- HEADER CON MENÚ -->
+    <header>
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="logo-container">
                 <a href="index.html">
-                    <img src="media/image.svg" alt="Logo de Smart Green House">
+                    <img src="media/image.svg" alt="Logo de Smart Green House" class="img-fluid img-logo">
                 </a>
             </div>
-            <nav class="col-md-10">
-                <ul class="nav-text d-flex justify-content-center list-unstyled">
-                    <li class="mx-5">
-                        <a class="text-decoration-none" href="index.html">Inicio</a>
-                    </li>
-                    <li class="mx-5">
-                        <a class="text-decoration-none" href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="mx-5">
-                        <a class="text-decoration-none" href="contactanos.html">Contáctanos</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="col-md-1">
-            </div>
+
+            <!-- Menú de navegación -->
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactanos.html">Contáctanos</a></li>
+            </ul>
+
+            <!-- Botón menú hamburguesa -->
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
         </div>
     </header>
 
-    <main class="container-fluid my-5">
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('show');
+        }
+    </script>
 
-        <section class="d-flex">
-            <div>
-                <h1 class="title-bold" style="font-size: 128px;">Título llamativo</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolor sed iste harum?
-                    Voluptatibus
-                    magnam cupiditate animi, sint illum possimus cumque dolore, consequuntur velit expedita commodi!
-                    Iste
-                    temporibus et expedita.
-                </p>
-                <button class="btn btn-primary btn-lg text-white">Contáctanos</button>
+    <main class="container-fluid">
+
+        <section class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-start">
+                    <h1 class="title-bold display-3 fw-bold">Título llamativo</h1>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolor sed iste harum?
+                        Voluptatibus magnam cupiditate animi, sint illum possimus cumque dolore, consequuntur velit
+                        expedita commodi! Iste temporibus et expedita.
+                    </p>
+                    <button class="btn btn-primary btn-lg text-white">Contáctanos</button>
+                </div>
+                <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                    <img src="media/invernadero.png" alt="Vista del invernadero automatizado de Smart Green House"
+                        class="img-fluid w-75">
+                </div>
             </div>
-            <img src="media/invernadero.png" alt="Vista del invernadero automatizado de Smart Green House">
         </section>
-
-        <section class="d-flex justify-content-center my-5">
-            <video width="640" height="360" controls>
+        <section class="container d-flex justify-content-center my-5">
+            <video class="w-100" style="max-width: 800px; height: auto;" controls>
                 <source src="media/video-oficial.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
             </video>
         </section>
 
-        <section class="my-5">
-            <h2 class="text-center title-bold">Beneficios</h2>
-            <div class="d-flex">
-                <div>
-                    <h3>lorem ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ratione aut velit!</p>
-                    <img src="media/picture.jpg" alt="">
+
+        <div class="container mt-5">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <div class="text-center">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <img src="media/picture.jpg" class="d-block mx-auto" alt="">
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <div class="text-center">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <img src="media/picture.jpg" class="d-block mx-auto" alt="">
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <div class="text-center">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <img src="media/picture.jpg" class="d-block mx-auto" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h3>lorem ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ratione aut velit!</p>
-                    <img src="media/picture.jpg" alt="">
-                </div>
-                <div>
-                    <h3>lorem ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ratione aut velit!</p>
-                    <img src="media/picture.jpg" alt="">
-                </div>
-                <div>
-                    <h3>lorem ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ratione aut velit!</p>
-                    <img src="media/picture.jpg" alt="">
-                </div>
-                <div>
-                    <h3>lorem ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ratione aut velit!</p>
-                    <img src="media/picture.jpg" alt="">
+
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+
+        <section class="my-5 ">
+            <h2 class="text-center title-bold mb-5 ">Preguntas Frecuentes</h2>
+            <div class="container contnt-preguntas">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq1" aria-expanded="true">
+                                ¿Cuál es la política de reembolsos?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula orci nec augue.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq2">
+                                ¿Cómo puedo contactar con soporte?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Puedes contactarnos a través del formulario en la página de contacto o por correo
+                                electrónico.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq3">
+                                ¿Cuánto tarda el envío de un pedido?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                El tiempo de envío depende de tu ubicación, pero suele tardar entre 3 y 7 días hábiles.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="my-5">
-            <h2 class="text-center title-bold">Preguntas frecuentes</h2>
-            <div class="d-flex flex-column align-items-center">
-                <details>
-                    <summary>¿Eligendi sapiente officiis dolor quam
-                        consequatur ipsam aspernatur, voluptates deserunt amet possimus tempore ratione harum quas sed
-                        natus,
-                        unde optio laborum?</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor doloremque, doloribus error
-                        necessitatibus fugit est soluta accusantium.</p>
-                </details>
-
-                <details>
-                    <summary>¿Eligendi sapiente officiis dolor quam
-                        consequatur ipsam aspernatur, voluptates deserunt amet possimus tempore ratione harum quas sed
-                        natus,
-                        unde optio laborum?</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor doloremque, doloribus error
-                        necessitatibus fugit est soluta accusantium.</p>
-                </details>
-
-                <details>
-                    <summary>¿Eligendi sapiente officiis dolor quam
-                        consequatur ipsam aspernatur, voluptates deserunt amet possimus tempore ratione harum quas sed
-                        natus,
-                        unde optio laborum?</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor doloremque, doloribus error
-                        necessitatibus fugit est soluta accusantium.</p>
-                </details>
-
-                <details>
-                    <summary>¿Eligendi sapiente officiis dolor quam
-                        consequatur ipsam aspernatur, voluptates deserunt amet possimus tempore ratione harum quas sed
-                        natus,
-                        unde optio laborum?</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor doloremque, doloribus error
-                        necessitatibus fugit est soluta accusantium.</p>
-                </details>
-
-                <details>
-                    <summary>¿Eligendi sapiente officiis dolor quam
-                        consequatur ipsam aspernatur, voluptates deserunt amet possimus tempore ratione harum quas sed
-                        natus,
-                        unde optio laborum?</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor doloremque, doloribus error
-                        necessitatibus fugit est soluta accusantium.</p>
-                </details>
-
-                <details>
-                    <summary>¿Eligendi sapiente officiis dolor quam
-                        consequatur ipsam aspernatur, voluptates deserunt amet possimus tempore ratione harum quas sed
-                        natus,
-                        unde optio laborum?</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor doloremque, doloribus error
-                        necessitatibus fugit est soluta accusantium.</p>
-                </details>
-            </div>
-
-
-        </section>
         <!-- <section class="d-flex justify-content-center">
             <div>
                 <h2 class="text-center">Consigue tu invernadero automatizado</h2>
@@ -163,11 +167,11 @@
             </div>
         </section>-->
 
-        <section class="d-flex justify-content-center">
-            <div class="text-center">
-                <h2 class="title-bold">Consigue tu invernadero automatizado</h2>
-                <p>Déjanos un mensaje y sé el primero en conocer sobre su lanzamiento.</p>
-                <button class="btn btn-primary btn-lg text-white">Unirse</button>
+        <section class="d-flex justify-content-center py-5">
+            <div class="text-center px-4">
+                <h2 class="title-bold mb-3">🌱 Consigue tu invernadero automatizado</h2>
+                <p class="lead mb-4">Déjanos un mensaje y sé el primero en enterarte de su lanzamiento.</p>
+                <button class="btn btn-primary btn-lg text-white px-5 py-3">¡Únete ahora!</button>
             </div>
         </section>
 

@@ -121,3 +121,100 @@ body.general-text * {
 .nav-text {
   font-weight: 600;
 }
+
+/* Header */
+/* ---- HEADER FIJO ---- */
+header {
+
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+}
+
+/* Contenedor de navegación */
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.img-logo {
+  height: 80px;
+}
+
+/* Menú */
+.nav-menu {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-menu .nav-item {
+  list-style: none;
+}
+
+.nav-menu .nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+
+.nav-menu .nav-link:hover {
+  color: #28a745;
+  /* Color verde de ejemplo */
+}
+
+/* Botón menú hamburguesa (oculto en escritorio) */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* ---- MODO RESPONSIVE ---- */
+@media (max-width: 768px) {
+  .nav-container {
+    grid-template-columns: 1fr 1fr;
+    /* Logo y botón de menú */
+  }
+
+  .menu-toggle {
+    display: block;
+    text-align: right;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100vw;
+    /* Ocupará todo el ancho */
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .nav-menu .nav-item {
+    padding: 10px 0;
+  }
+}
