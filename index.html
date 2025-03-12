@@ -44,13 +44,6 @@
             <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
         </div>
     </header>
-
-    <script>
-        function toggleMenu() {
-            document.querySelector('.nav-menu').classList.toggle('show');
-        }
-    </script>
-
     <main>
         <section class="container p-5">
             <div class="row align-items-center px-3">
@@ -158,29 +151,6 @@
             </div>
         </div>
 
-        <!-- Splide.js JS -->
-        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
-
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                new Splide('#mySplide', {
-                    type: 'loop',
-                    perPage: 3,
-                    perMove: 1,
-                    autoplay: true,
-                    interval: 3000,
-                    pauseOnHover: true,
-                    arrows: false,
-                    pagination: false,
-                    gap: '20px',
-
-                    breakpoints: {
-                        1024: { perPage: 2 }, // En pantallas medianas, mostrar 2 elementos
-                        768: { perPage: 1 },  // En móviles, mostrar 1 elemento
-                    }
-                }).mount();
-            });
-        </script>
 
         <section class="my-5">
             <h2 class="text-center title-bold mb-5">Preguntas Frecuentes</h2>
@@ -359,12 +329,10 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            once: true, // La animación solo se ejecuta una vez (cuando el elemento entra en la vista)
-            offset: 100, // La animación se ejecuta cuando el elemento está a 100px de distancia de la vista
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.0/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
