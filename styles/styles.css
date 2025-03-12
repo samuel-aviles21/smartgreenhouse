@@ -242,8 +242,6 @@ header {
 .splide__slide {
   text-align: center;
   padding: 20px;
-  border-radius: 10px;
-  border: 2px solid black;
   box-sizing: border-box;
 }
 
@@ -266,16 +264,13 @@ header {
 
 /* CONTACTO */
 
-.custom-card-contacto {
-
-  max-width: 700px;
-  background: white;
-  border-radius: 20px;
-  border: 1px solid rgb(0, 0, 0);
-  padding: 50px 80px;
-}
 
 .contnt-preguntas {
   max-width: 800px;
 
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  outline: none;
 }
