@@ -14,6 +14,13 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 
+
+    <!-- Splide.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
+
+    <style>
+
+    </style>
 </head>
 
 <body class="general-text">
@@ -48,10 +55,11 @@
 
     <main class="container-fluid">
 
-        <section class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-6 text-start">
-                    <h1 class="title-bold display-3 fw-bold">Título llamativo</h1>
+        <section class="container p-5">
+            <div class="row align-items-center px-3">
+                <!-- Texto -->
+                <div class="col-md-6 order-2 order-md-1 text-center text-md-start">
+                    <h1 class="title-bold display-4 fw-bold">Título llamativo</h1>
                     <p class="lead">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolor sed iste harum?
                         Voluptatibus magnam cupiditate animi, sint illum possimus cumque dolore, consequuntur velit
@@ -59,75 +67,101 @@
                     </p>
                     <button class="btn btn-primary btn-lg text-white">Contáctanos</button>
                 </div>
-                <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                <!-- Imagen -->
+                <div class="col-md-6 order-1 order-md-2 text-center">
                     <img src="media/invernadero.png" alt="Vista del invernadero automatizado de Smart Green House"
-                        class="img-fluid w-75">
+                        class="img-fluid w-75 w-md-100">
                 </div>
             </div>
         </section>
-        <section class="container d-flex justify-content-center my-5">
-            <video class="w-100" style="max-width: 800px; height: auto;" controls>
-                <source src="media/video-oficial.mp4" type="video/mp4">
-                Tu navegador no soporta videos.
-            </video>
+        <section class="container text-center my-5">
+            <h2 class="text-center title-bold mb-5">Cómo funciona</h2>
+            <div class="d-flex justify-content-center">
+                <video class="w-100" style="max-width: 800px; height: auto;" autoplay loop muted playsinline>
+                    <source src="media/video-oficial.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
         </section>
 
 
-        <div class="container mt-5">
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="3000">
-                        <div class="text-center">
-                            <h3>Lorem Ipsum</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <img src="media/picture.jpg" class="d-block mx-auto" alt="">
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <div class="text-center">
-                            <h3>Lorem Ipsum</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <img src="media/picture.jpg" class="d-block mx-auto" alt="">
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <div class="text-center">
-                            <h3>Lorem Ipsum</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <img src="media/picture.jpg" class="d-block mx-auto" alt="">
-                        </div>
-                    </div>
+        <div class="container p-5 text-center">
+            <h2 class="text-center title-bold mb-5">Beneficios</h2>
+            <div id="mySplide" class="splide" aria-label="Carrusel de contenido">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <h3>lorem ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae at non atque amet, dicta
+                                autem, fugiat dolorum similique sit molestias corporis nihil aliquam.</p>
+                            <img src="media/image.svg" alt="Imagen 1">
+                        </li>
+                        <li class="splide__slide">
+                            <h3>lorem ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae at non atque amet, dicta
+                                autem, fugiat dolorum similique sit molestias corporis nihil aliquam.</p>
+                            <img src="media/image.svg" alt="Imagen 2">
+                        </li>
+                        <li class="splide__slide">
+                            <h3>lorem ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae at non atque amet, dicta
+                                autem, fugiat dolorum similique sit molestias corporis nihil aliquam.</p>
+                            <img src="media/image.svg" alt="Imagen 3">
+                        </li>
+                        <li class="splide__slide">
+                            <h3>lorem ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae at non atque amet, dicta
+                                autem, fugiat dolorum similique sit molestias corporis nihil aliquam.</p>
+                            <img src="media/image.svg" alt="Imagen 4">
+                        </li>
+                        <li class="splide__slide">
+                            <h3>lorem ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae at non atque amet, dicta
+                                autem, fugiat dolorum similique sit molestias corporis nihil aliquam.</p>
+                            <img src="media/image.svg" alt="Imagen 5">
+                        </li>
+                        <li class="splide__slide">
+                            <h3>lorem ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae at non atque amet, dicta
+                                autem, fugiat dolorum similique sit molestias corporis nihil aliquam.</p>
+                            <img src="media/image.svg" alt="Imagen 6">
+                        </li>
+                    </ul>
                 </div>
-
-                <!-- Controles del carrusel -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
             </div>
         </div>
+        <!-- Bootstrap JS (Opcional) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-        <section class="my-5 ">
-            <h2 class="text-center title-bold mb-5 ">Preguntas Frecuentes</h2>
+        <!-- Splide.js JS -->
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                new Splide('#mySplide', {
+                    type: 'loop',
+                    perPage: 3,
+                    perMove: 1,
+                    autoplay: true,
+                    interval: 3000,
+                    pauseOnHover: true,
+                    arrows: false,
+                    pagination: false,
+                    gap: '20px',
+
+                    breakpoints: {
+                        1024: { perPage: 2 }, // En pantallas medianas, mostrar 2 elementos
+                        768: { perPage: 1 },  // En móviles, mostrar 1 elemento
+                    }
+                }).mount();
+            });
+        </script>
+
+        <section class="my-5">
+            <h2 class="text-center title-bold mb-5">Preguntas Frecuentes</h2>
             <div class="container contnt-preguntas">
                 <div class="accordion" id="faqAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#faq1" aria-expanded="true">
-                                ¿Cuál es la política de reembolsos?
-                            </button>
-                        </h2>
-                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula orci nec augue.
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -142,6 +176,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -155,10 +190,68 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq4">
+                                ¿Cuáles son los métodos de pago disponibles?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Aceptamos pagos con tarjeta de crédito, débito, PayPal y transferencia bancaria.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq5">
+                                ¿Se pueden realizar cambios o devoluciones?
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Sí, aceptamos cambios y devoluciones dentro de los primeros 30 días después de la
+                                compra.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq6">
+                                ¿Ofrecen envíos internacionales?
+                            </button>
+                        </h2>
+                        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Sí, realizamos envíos a varios países. Puedes verificar la disponibilidad al momento de
+                                la compra.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq7">
+                                ¿Cómo puedo rastrear mi pedido?
+                            </button>
+                        </h2>
+                        <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Te enviaremos un correo con el número de seguimiento una vez que tu pedido haya sido
+                                despachado.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
         <!-- <section class="d-flex justify-content-center">
             <div>
                 <h2 class="text-center">Consigue tu invernadero automatizado</h2>
@@ -168,7 +261,7 @@
         </section>-->
 
         <section class="d-flex justify-content-center py-5">
-            <div class="text-center px-4">
+            <div class="text-center p-5 custom-card-contacto">
                 <h2 class="title-bold mb-3">🌱 Consigue tu invernadero automatizado</h2>
                 <p class="lead mb-4">Déjanos un mensaje y sé el primero en enterarte de su lanzamiento.</p>
                 <button class="btn btn-primary btn-lg text-white px-5 py-3">¡Únete ahora!</button>
