@@ -16,42 +16,37 @@
 </head>
 
 <body class="general-text">
-    <header class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-md-1">
+    <header>
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="logo-container">
                 <a href="index.html">
-                    <img src="media/image.svg" alt="Logo de Smart Green House">
+                    <img src="media/image.svg" alt="Logo de Smart Green House" class="img-fluid img-logo">
                 </a>
             </div>
-            <nav class="col-md-10">
-                <ul class="nav-text d-flex justify-content-center list-unstyled">
-                    <li class="mx-5">
-                        <a class="text-decoration-none" href="index.html">Inicio</a>
-                    </li>
-                    <li class="mx-5">
-                        <a class="text-decoration-none" href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="mx-5">
-                        <a class="text-decoration-none" href="contactanos.html">Contáctanos</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="col-md-1">
-            </div>
+
+            <!-- Menú de navegación -->
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactanos.html">Contáctanos</a></li>
+            </ul>
+
+            <!-- Botón menú hamburguesa -->
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
         </div>
     </header>
 
-    <main class="container-fluid my-5">
-        <section class="d-flex justify-content-center">
-            <div>
-                <img src="media/picture.jpg" alt="invernadero automatizado de Smart Green House">
+    <main class="container-fluid mt-5">
+        <section class="row">
+            <div class="col-md-6 background-section-contact">
             </div>
-            <div>
-                <div>
+            <div class="col-md-6">
+                <div class="px-5">
                     <h1 class="title-bold">Contáctate con nuestro equipo</h1>
                     <p>Dejanos saber en que podemos ayudarte</p>
                     <div class="container mt-5">
-                        <form class="p-4">
+                        <form>
                             <div class="row mb-3">
                                 <div class="col-md-6">
                                     <label for="firstName" class="form-label">Nombres</label>
@@ -81,14 +76,14 @@
                         </form>
                     </div>
                 </div>
-                <div class="d-flex">
-                    <div class="d-flex">
+                <div class="d-flex justify-content-evenly my-5">
+                    <div class="d-flex align-items-center">
                         <img src="media/whatsapp.svg" alt="" style="width: 38px;height: 38px;">
-                        <p>+51989786066</p>
+                        <p class="mb-0">+51989786066</p>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex align-items-center">
                         <img src="media/email.svg" alt="" style="width: 38px;height: 38px;">
-                        <p>contacto@sgh.com</p>
+                        <p class="mb-0">contacto@sgh.com</p>
                     </div>
                 </div>
             </div>
