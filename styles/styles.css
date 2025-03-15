@@ -274,3 +274,11 @@ header {
   box-shadow: none;
   outline: none;
 }
+
+
+/* PAGINA NOSOTROS */
+
+.custom-padding-nosotros{
+    padding-top: 6rem; /* Aumenta el espacio superior */
+    padding-bottom: 6rem; /* Aumenta el espacio inferior */
+}
