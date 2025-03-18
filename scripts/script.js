@@ -26,3 +26,4 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }).mount({ AutoScroll: window.splide.Extensions.AutoScroll }); // MONTAR EXTENSIÓN CORRECTAMENTE
 });
+
